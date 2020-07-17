@@ -16,4 +16,4 @@ const result = students.reduce((accumulate,student)=>{
     //you can extract all the values of an attribute for students i.e marks and add it to array
     return [...accumulate,student.marks+student.age]
 },[])
-console.log(result)a
+console.log(result)
