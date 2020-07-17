@@ -27,4 +27,19 @@ function show(){
 }
 show()
 
+//DOM event handler
+const button = document.createElement('button')
+button.textContent("CLick")
+//this refers to the element button here
+button.addEventListener('click',()=>console.log(this))
 
+//classes
+class Student{
+    //here this is scoped inside a class and can only be used inside it.
+    constructor(name,age){
+        this.name = name
+        this.age = age
+    }
+}
+const s = new Student("lakhan",21)
+console.log(s.name) //returns name of the object

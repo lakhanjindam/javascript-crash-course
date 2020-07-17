@@ -16,7 +16,7 @@ console.log(`User's name is ${name}, department is ${dept} and age is ${age}`)
 
 // now destructure the nested objects
 //normal way
-// const {city} = user.address
+const {city} = user.address
 //cool way
 const {address:{city,town}} = user
 console.log(`${name}'s city is ${city}`)

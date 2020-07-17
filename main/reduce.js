@@ -9,10 +9,10 @@ const students = [
 //first pram accumulate collects and tracks the value, student map each value of students object
 //0 is 3rd param and used to set initial value
 const result = students.reduce((accumulate,student)=>{
-    // console.log(`
-    // accumlate_value :${accumulate},
-    // student_val : ${student.marks}
-    // `)
+    console.log(`
+    accumlate_value :${accumulate},
+    student_val : ${student.marks}
+    `)
     //you can extract all the values of an attribute for students i.e marks and add it to array
     return [...accumulate,student.marks+student.age]
 },[])
